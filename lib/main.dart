@@ -1,31 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
+import 'package:redux_example/store/actions.dart';
+import 'package:redux_example/store/state.dart';
 
-enum Actions { increment, decrement }
-
-// 传递进来一个state + action  返回去一个新的state
-int countReducer(int state, action) {
-  if (action == Actions.increment) {
-    return state + 1;
-  }
-  if (action == Actions.decrement) {
-    return state - 1;
-  }
-  return state;
-}
+import 'store/reducers.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final store = Store(countReducer, initialState: 0);
+  final store = Store(appStateReducer, initialState: AppState(0));
   MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return StoreProvider(
+    return StoreProvider<AppState>(
       store: store,
       child: MaterialApp(
         title: 'Flutter Demo',
@@ -44,30 +35,54 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.lightBlue.shade400,
+        title: const Text(
+          'redux and flutter_redux',
+          style: TextStyle(
+            fontSize: 24,
+            color: Colors.white,
+          ),
+        ),
+      ),
       body: Center(
         child: Column(
           children: [
             const Text('计数器的值：'),
-            StoreConnector<int, String>(
+            StoreConnector<AppState, String>(
               builder: (context, countStr) => Text(
                 countStr,
                 style: const TextStyle(fontSize: 30),
               ),
-              converter: (store) => store.state.toString(),
+              converter: (store) => store.state.count.toString(),
             )
           ],
         ),
       ),
-      floatingActionButton: StoreConnector<int, Function>(
-        builder: (context, callback) => FloatingActionButton(
-          child: const Icon(Icons.add),
-          onPressed: () {
-            callback();
-          },
+      floatingActionButton:
+          StoreConnector<AppState, Function(CountActions action)>(
+        builder: (context, callback) => Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              child: const Icon(Icons.add),
+              onPressed: () {
+                callback(CountActions.increment);
+              },
+            ),
+            const Padding(
+              padding: EdgeInsets.only(top: 30),
+            ),
+            FloatingActionButton(
+              child: const Icon(Icons.remove),
+              onPressed: () {
+                callback(CountActions.decrement);
+              },
+            ),
+          ],
         ),
         converter: (store) {
-          return () => store.dispatch(Actions.increment);
+          return (action) => store.dispatch(action);
         },
       ),
     );

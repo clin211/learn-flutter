@@ -1,0 +1,1 @@
+enum CountActions { increment, decrement }
