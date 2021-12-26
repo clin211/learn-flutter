@@ -1,5 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:route/main.dart';
 import 'package:route/routes/routes.dart';
 import 'package:route/setup_get_it.dart';
@@ -59,7 +60,19 @@ class _HomeState extends State<Home> {
                 );
               },
               child: const Text('detail', style: TextStyle(fontSize: 20)),
-            )
+            ),
+            TextButton(
+                onPressed: () {
+                  Fluttertoast.showToast(
+                      msg: "This is Center Short Toast",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.CENTER,
+                      timeInSecForIosWeb: 1,
+                      backgroundColor: Colors.red,
+                      textColor: Colors.white,
+                      fontSize: 16.0);
+                },
+                child: const Text('toast'))
           ],
         ),
       ),
