@@ -7,10 +7,10 @@ class Detail extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('detail'),
+        title: const Text('Detail'),
       ),
       body: Container(
-        child: const Text('detail'),
+        child: const Text('Detail'),
       ),
     );
   }

@@ -1,5 +1,8 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:route/main.dart';
 import 'package:route/routes/routes.dart';
+import 'package:route/setup_get_it.dart';
 
 class Home extends StatefulWidget {
   // const Home({Key? key, required this.title}) : super(key: key);
@@ -44,7 +47,16 @@ class _HomeState extends State<Home> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.of(context).pushNamed('/detail/22');
+                // Navigator.of(context).pushNamed('/detail/22');
+                // 编程式导航
+                FluroRouter router = getIt<FluroRouter>();
+                router.navigateTo(
+                  context,
+                  '/dateil',
+                  routeSettings: RouteSettings(
+                    arguments: TestParams(22, 'Forest'),
+                  ),
+                );
               },
               child: const Text('detail', style: TextStyle(fontSize: 20)),
             )

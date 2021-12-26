@@ -1,4 +1,5 @@
 import 'package:fluro/fluro.dart';
+import 'package:route/main.dart';
 import 'package:route/pages/detail.dart';
 import 'package:route/pages/home.dart';
 import 'package:route/pages/login.dart';
@@ -7,7 +8,7 @@ class Routes {
   // 1、页面路径的定义
   static String home = '/';
   static String login = '/login';
-  static String detail = '/detail/:id';
+  static String detail = '/detail/:id/:name';
 
   // 2、定义路径的handler
   static final Handler _homeHandler = Handler(
@@ -22,8 +23,9 @@ class Routes {
   );
   static final Handler _detailHandler = Handler(
     handlerFunc: (context, parameters) {
+      final args = context?.settings?.arguments as TestParams;
       print(
-          '🚀 ~ file: routes.dart ~ line 25 ~ Routes ~ parameters: $parameters');
+          '🚀 ~ file: routes.dart ~ line 25 ~ Routes ~ parameters: $args');
       return const Detail();
     },
   );
