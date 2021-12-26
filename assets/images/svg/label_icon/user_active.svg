@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>user_active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图标切图20200305" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Label-icons" transform="translate(-272.000000, -100.000000)" fill="#FF4500" fill-rule="nonzero">
+            <g id="Row2" transform="translate(17.000000, 100.000000)">
+                <g id="icon/label/user_active" transform="translate(255.000000, 0.000000)">
+                    <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M5.67675781,16.8830566 C6.10675781,15.9830566 9.02490234,14.559042 12.0050049,14.559042 C14.9851074,14.559042 17.864668,15.9623047 18.284668,16.8623047 C18.0153809,17.3027344 15.8106689,20 12,20 C8.18933105,20 6.19238281,17.3900146 5.67675781,16.8830566 Z M12,6 C13.94,6 15.5,7.56 15.5,9.5 C15.5,11.44 13.94,13 12,13 C10.06,13 8.5,11.44 8.5,9.5 C8.5,7.56 10.06,6 12,6 Z" id="user_active"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

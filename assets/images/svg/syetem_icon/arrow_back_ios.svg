@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon/arrow_back_ios</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图标切图20200305" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Syetem-icons" transform="translate(-105.000000, -26.000000)" fill="#666666" fill-rule="nonzero">
+            <g id="icon/arrow_back_ios" transform="translate(105.000000, 26.000000)">
+                <path d="M15.8441247,4.31334932 C15.4263256,3.89555023 14.7527311,3.89555023 14.3349321,4.31334932 L7.24940048,11.3988809 C6.91686651,11.7314149 6.91686651,12.2685851 7.24940048,12.6011191 L14.3349321,19.6866507 C14.7527311,20.1044498 15.4263256,20.1044498 15.8441247,19.6866507 C16.2619238,19.2688516 16.2619238,18.5952571 15.8441247,18.177458 L9.67092992,11.9957367 L15.8526512,5.81401545 C16.2619238,5.40474287 16.2619238,4.7226219 15.8441247,4.31334932 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

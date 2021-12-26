@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon/favorite</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图标切图20200305" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Syetem-icons" transform="translate(-233.000000, -194.000000)" fill="#666666" fill-rule="nonzero">
+            <g id="icon/favorite" transform="translate(233.000000, 194.000000)">
+                <path d="M13.3535711,20.1306542 C12.5935711,20.8206542 11.4235711,20.8206542 10.6635711,20.1206542 L10.5535711,20.0206542 C5.30357106,15.2706542 1.87357106,12.1606542 2.00357106,8.28065415 C2.06357106,6.58065415 2.93357106,4.95065415 4.34357106,3.99065415 C6.98357106,2.19065415 10.2435711,3.03065415 12.0035711,5.09065415 C13.7635711,3.03065415 17.0235711,2.18065415 19.6635711,3.99065415 C21.0735711,4.95065415 21.9435711,6.58065415 22.0035711,8.28065415 C22.1435711,12.1606542 18.7035711,15.2706542 13.4535711,20.0406542 L13.3535711,20.1306542 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

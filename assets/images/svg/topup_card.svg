@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 96" width="96" height="96">
+	<defs>
+		<path id="base" d="M84,18H12c-3.3,0-6,2.7-6,6v12h84V24C90,20.7,87.3,18,84,18zM6,72c0,3.3,2.7,6,6,6h12v-9h-6l9-10c0,0,1.5-2,3-2s3,2,3,2l9,10h-6v9h48c3.3,0,6-2.7,6-6V42H6V72z"/>
+	</defs>
+	<clipPath id="base_group">
+		<path id="base" d="M84,18H12c-3.3,0-6,2.7-6,6v12h84V24C90,20.7,87.3,18,84,18zM6,72c0,3.3,2.7,6,6,6h12v-9h-6l9-10c0,0,1.5-2,3-2s3,2,3,2l9,10h-6v9h48c3.3,0,6-2.7,6-6V42H6V72z"/>
+	</clipPath>
+	<use xlink:href="#base" href="#base"  fill="#695FF9"/>
+	<g clip-path="url(#base_group)">
+		<rect fill="#9126F9" x="6" y="0" width="84" height="42" rx="6" ry="6"/>
+		<circle fill="#6743FF" cx="6" cy="18" r="60"/>
+		<circle fill="#6D15F9" opacity=".6" cx="60" cy="0" r="54"/>
+		<circle fill="#1A15F9" opacity=".6" cx="102" cy="120" r="60"/>
+	</g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon/done</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图标切图20200305" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Syetem-icons" transform="translate(-554.000000, -194.000000)" fill="#666666" fill-rule="nonzero">
+            <g id="icon/done" transform="translate(554.000000, 194.000000)">
+                <path d="M9.1925,16.1925 L5.6925,12.6925 C5.3025,12.3025 4.6825,12.3025 4.2925,12.6925 C3.9025,13.0825 3.9025,13.7025 4.2925,14.0925 L8.4825,18.2825 C8.8725,18.6725 9.5025,18.6725 9.8925,18.2825 L20.4925,7.6925 C20.8825,7.3025 20.8825,6.6825 20.4925,6.2925 C20.1025,5.9025 19.4825,5.9025 19.0925,6.2925 L9.1925,16.1925 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

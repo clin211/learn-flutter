@@ -1,0 +1,22 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 96" width="96" height="96">
+	<defs>
+		<path id="base" d="M24,60c-3.3,0-6-2.7-6-6s2.7-6,6-6H6v24c0,3.3,2.7,6,6,6h18V54C30,57.3,27.3,60,24,60zM84,18H36v18c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6h48V24C90,20.7,87.3,18,84,18zM6,24v18h18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6V18H12C8.7,18,6,20.7,6,24zM48,54c0,3.3-2.7,6-6,6s-6-2.7-6-6v24h48c3.3,0,6-2.7,6-6V48H42C45.3,48,48,50.7,48,54z"/>
+	</defs>
+	<clipPath id="base_group">
+		<path id="base" d="M24,60c-3.3,0-6-2.7-6-6s2.7-6,6-6H6v24c0,3.3,2.7,6,6,6h18V54C30,57.3,27.3,60,24,60zM84,18H36v18c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6h48V24C90,20.7,87.3,18,84,18zM6,24v18h18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6V18H12C8.7,18,6,20.7,6,24zM48,54c0,3.3-2.7,6-6,6s-6-2.7-6-6v24h48c3.3,0,6-2.7,6-6V48H42C45.3,48,48,50.7,48,54z"/>
+	</clipPath>
+	<linearGradient id="Gradient1" x1="0" y1="0" x2="100%" y2="100%">
+		<stop offset="0" stop-color="#FFA555"/>
+		<stop offset="1" stop-color="#E5352B"/>
+	</linearGradient>
+	<use xlink:href="#base" href="#base"  fill="url(#Gradient1)"/>
+	<g clip-path="url(#base_group)">
+		<radialGradient id="Gradient2" cx="50%" cy="50%" r="50%">
+			<stop  offset="0" stop-color="#FFA555"/>
+			<stop  offset="1" stop-color="#E54C2B"/>
+		</radialGradient>
+		<circle fill="url(#Gradient2)" cx="84" cy="78" r="48"/>
+		<circle fill="url(#Gradient2)" cx="14" cy="6" r="48"/>
+		<circle fill="url(#Gradient2)" cx="6" cy="72" r="48"/>
+	</g>
+</svg>

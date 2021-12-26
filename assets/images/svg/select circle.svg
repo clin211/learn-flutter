@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02Cart-Select" transform="translate(-16.000000, -80.000000)">
+            <g id="p1" transform="translate(0.000000, 64.000000)">
+                <g id="content" transform="translate(16.000000, 13.000000)">
+                    <g id="Select" transform="translate(0.000000, 3.000000)">
+                        <g id="select">
+                            <g>
+                                <rect id="circle" fill="#FB8E29" x="0" y="0" width="22" height="22" rx="11"></rect>
+                                <path d="M5.14644661,11.3535534 L17.6464466,11.3535534 C17.922589,11.3535534 18.1464466,11.577411 18.1464466,11.8535534 C18.1464466,12.1296958 17.922589,12.3535534 17.6464466,12.3535534 L4.64644661,12.3535534 C4.39955431,12.3535534 4.19445698,12.1746079 4.15377766,11.9393398 L4.14644661,11.9393398 L4.14644661,4.43933983 C4.14644661,4.16319745 4.37030423,3.93933983 4.64644661,3.93933983 C4.92258898,3.93933983 5.14644661,4.16319745 5.14644661,4.43933983 L5.14644661,11.3535534 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(11.146447, 8.146447) rotate(-45.000000) translate(-11.146447, -8.146447) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

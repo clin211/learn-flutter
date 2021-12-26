@@ -58,9 +58,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/fonts/
+    - assets/images/banner/
+    - assets/images/common/
+    - assets/images/svg/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -87,3 +89,34 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: ProductSans
+      fonts:
+        - asset: assets/fonts/google-sans/ProductSans-Black.ttf
+        - asset: assets/fonts/google-sans/ProductSans-BlackItalic.ttf
+        - asset: assets/fonts/google-sans/ProductSans-Bold.ttf
+        - asset: assets/fonts/google-sans/ProductSans-BoldItalic.ttf
+        - asset: assets/fonts/google-sans/ProductSans-Italic.ttf
+        - asset: assets/fonts/google-sans/ProductSans-Light.ttf
+        - asset: assets/fonts/google-sans/ProductSans-LightItalic.ttf
+        - asset: assets/fonts/google-sans/ProductSans-Medium.ttf
+        - asset: assets/fonts/google-sans/ProductSans-MediumItalic.ttf
+        - asset: assets/fonts/google-sans/ProductSans-Regular.ttf
+        - asset: assets/fonts/google-sans/ProductSans-Thin.ttf
+        - asset: assets/fonts/google-sans/ProductSans-ThinItalic.ttf
+
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/Roboto/Roboto-Black.ttf
+        - asset: assets/fonts/Roboto/Roboto-BlackItalic.ttf
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto/Roboto-BoldItalic.ttf
+        - asset: assets/fonts/Roboto/Roboto-Italic.ttf
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto/Roboto-LightItalic.ttf
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto/Roboto-MediumItalic.ttf
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto/Roboto-Thin.ttf
+        - asset: assets/fonts/Roboto/Roboto-ThinItalic.ttf
