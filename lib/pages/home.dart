@@ -39,11 +39,16 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.pushNamed(context, '/chapter_one');
               },
-              child: const Text('Go to Chapter One'),
+              child: const Text('widgets'),
             ),
             ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, '/chapter_two'),
-                child: const Text('Go to Chapter Two')),
+              onPressed: () => Navigator.pushNamed(context, '/chapter_two'),
+              child: const Text('text and image'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/chapter_three'),
+              child: const Text('user input'),
+            ),
           ],
         ),
       ),

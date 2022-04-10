@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_book/pages/chapter/three.dart';
 import 'package:learn_book/pages/chapter/two.dart';
 import 'package:learn_book/pages/home.dart';
 import 'package:learn_book/pages/chapter/one.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const Home(title: 'Learn Book'),
         '/chapter_one': (context) => const ChapterOne(),
         '/chapter_two': (context) => const ChapterTwo(),
+        '/chapter_three': (context) => const ChapterThree(),
       },
       home: const Home(title: 'Learn Book'),
     );
