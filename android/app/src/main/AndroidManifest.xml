@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.learn_book">
+    package="com.learn-flutter.learn_book">
    <application
         android:label="learn_book"
         android:name="${applicationName}"
