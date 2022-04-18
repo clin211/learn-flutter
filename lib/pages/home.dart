@@ -53,6 +53,18 @@ class _HomeState extends State<Home> {
               onPressed: () => Navigator.pushNamed(context, '/chapter_four'),
               child: const Text('async'),
             ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/chapter_five'),
+              child: const Text('list'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/tabs'),
+              child: const Text('纵向联动'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/tabs'),
+              child: const Text('滚动监控'),
+            ),
           ],
         ),
       ),

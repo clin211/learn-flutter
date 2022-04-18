@@ -49,7 +49,7 @@ class _ChapterFourState extends State<ChapterFour> {
               indicatorSize: TabBarIndicatorSize.label, //指示器大小,底部边框
               labelColor: Colors.deepOrange, //选中label颜色
               unselectedLabelColor: Colors.black, //未选中label颜色边框
-
+              isScrollable: true,
               // 点击事件
               onTap: (index) {
                 print('点击了 $index');
