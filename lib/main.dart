@@ -9,7 +9,10 @@ import 'package:learn_book/pages/home.dart';
 import 'package:learn_book/pages/chapter/one.dart';
 import 'package:learn_book/pages/page_view_demo.dart';
 import 'package:learn_book/pages/tabs.dart';
+import 'package:learn_book/widgets/eight/demo.dart';
 import 'package:learn_book/widgets/six/boundaries/two.dart';
+
+import 'pages/chapter/eight.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +40,9 @@ class MyApp extends StatelessWidget {
         '/chapter_six': (context) => ChapterSix(),
         'chapter_six/one': (context) => BoundariesTwo(),
         '/chapter_seven': (context) => ChapterSeven(),
+        '/chapter_eight': (context) => ChapterEight(),
         '/tabs': (context) => Detail(),
+        '/drag_demo': (context) => DragDemo()
       },
       home: const Home(title: 'Learn Book'),
     );

@@ -73,6 +73,14 @@ class _HomeState extends State<Home> {
               onPressed: () => Navigator.pushNamed(context, '/chapter_seven'),
               child: const Text('过渡动画'),
             ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/chapter_eight'),
+              child: const Text('交互'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/drag_demo'),
+              child: const Text('gesture detector drag'),
+            ),
           ],
         ),
       ),
