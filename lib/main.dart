@@ -13,6 +13,7 @@ import 'package:learn_book/widgets/eight/demo.dart';
 import 'package:learn_book/widgets/six/boundaries/two.dart';
 
 import 'pages/chapter/eight.dart';
+import 'pages/chapter/nine.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         'chapter_six/one': (context) => BoundariesTwo(),
         '/chapter_seven': (context) => ChapterSeven(),
         '/chapter_eight': (context) => ChapterEight(),
+        '/chapter_nine': (context) => const ChapterNine(),
         '/tabs': (context) => Detail(),
         '/drag_demo': (context) => DragDemo()
       },
