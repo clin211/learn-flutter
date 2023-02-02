@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:yiyan/ui/widget/vertical_text.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -19,6 +20,8 @@ class _HomeState extends State<Home> {
 
   String textContent = ''; // 一言的内容
   String from = ''; // 来源
+  double singleLineWidth = 16;
+  int numberOfSingleLineText = 10;
 
   void loadTextContent() async {
     var url = Uri.parse('https://v1.hitokoto.cn?c=i');
@@ -28,8 +31,6 @@ class _HomeState extends State<Home> {
       textContent = respData['hitokoto'];
       from = respData['from_who'];
     });
-    print(textContent);
-    print(from);
   }
 
   Widget imageWidget() {
@@ -42,9 +43,11 @@ class _HomeState extends State<Home> {
   }
 
   Widget textWidget() {
-    return Text(
-      textContent + from,
-      style: const TextStyle(color: Colors.black, fontSize: 12.0),
+    return VerticalText(
+      textContent: textContent,
+      from: from,
+      numberOfSingleLineText: numberOfSingleLineText,
+      singleLineWidth: singleLineWidth,
     );
   }
 
