@@ -12,13 +12,51 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   bool darkModeOn = false;
+  bool customTheme = false;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangePlatformBrightness() {
+    Brightness brightness = WidgetsBinding.instance.window.platformBrightness;
+    setState(() {
+      if (brightness.name == "light") {
+        darkModeOn = false;
+      } else {
+        darkModeOn = true;
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          brightness: customTheme && !darkModeOn
+              ? Brightness.light
+              : customTheme && darkModeOn
+                  ? Brightness.dark
+                  : Brightness.light),
+      darkTheme: ThemeData(
+        brightness: customTheme && !darkModeOn
+            ? Brightness.light
+            : customTheme && darkModeOn
+                ? Brightness.dark
+                : Brightness.dark,
+      ),
       home: Scaffold(
         body: Stack(
           children: [
@@ -36,6 +74,7 @@ class _MyAppState extends State<MyApp> {
                       size: 25),
                   onPressed: () {
                     setState(() {
+                      customTheme = true;
                       darkModeOn = !darkModeOn;
                     });
                   },

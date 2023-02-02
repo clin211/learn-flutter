@@ -55,20 +55,43 @@ class VerticalTextState extends State<VerticalText> {
       allTextLine[allTextLine.length - 1 - i] = temp;
     }
     String from = widget.from;
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.only(top: 40, bottom: 30),
-          child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: allTextLine),
+    // return Column(
+    //   children: [
+    //     Container(
+    //       padding: const EdgeInsets.only(top: 40, bottom: 30),
+    //       child: Row(
+    //           mainAxisAlignment: MainAxisAlignment.center,
+    //           crossAxisAlignment: CrossAxisAlignment.start,
+    //           children: allTextLine),
+    //     ),
+    //     Text(
+    //       '- $from -',
+    //       style: TextStyle(fontSize: widget.numberOfSingleLineText + 1),
+    //     )
+    //   ],
+    // );
+    return AnimatedScale(
+      duration: const Duration(milliseconds: 2000),
+      scale: widget.textContent != '' ? 1.0 : 0.0,
+      child: AnimatedRotation(
+        turns: widget.textContent != '' ? 1.0 : 0.0,
+        duration: const Duration(milliseconds: 2000),
+        child: Column(
+          children: [
+            Container(
+              padding: const EdgeInsets.only(top: 40, bottom: 30),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: allTextLine),
+            ),
+            Text(
+              '- $from -',
+              style: TextStyle(fontSize: widget.numberOfSingleLineText + 1),
+            )
+          ],
         ),
-        Text(
-          '- $from -',
-          style: TextStyle(fontSize: widget.numberOfSingleLineText + 1),
-        )
-      ],
+      ),
     );
   }
 }
